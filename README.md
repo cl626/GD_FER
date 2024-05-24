@@ -22,7 +22,7 @@
 ## 训练：
 
 * 运行dataset_model_method.py，后加对应的超参parser
-* 如数据集=kdef，模型=IResnet50，方法=L~viewFX~结合L~交叉熵~，batch_size=256，...
+* 如数据集=kdef，模型=IResnet50，方法=$L_{viewFX}$结合$L_{交叉熵}$，batch_size=256，...
 
 ```py
 python kdef_ir50_comb.py --ratio 0.0  --batch_size 256 --gamma 0.5 --beta 0.001 --learning_rate 0.01 --weight_decay 5e-4 --temp 0.07 --cosine
