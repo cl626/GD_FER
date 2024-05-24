@@ -16,8 +16,8 @@
 
 ## 构建数据集:
 
-* build_ddcf.py从DDCF文件夹构建对应的dataloader，
-* build_pkldata从KEDF，build_rafd从RAFDB数据集
+* ```python build_ddcf.py```从DDCF文件夹构建对应的dataloader，
+* ```python build_pkldata```从KEDF，build_rafd从RAFDB数据集
 
 ## 训练：
 
@@ -25,7 +25,7 @@
 * 如数据集=kdef，模型=IResnet50，方法=$L_{viewFX}$结合$L_{交叉熵}$，batch_size=256，...
 
 ```py
-python kdef_ir50_comb.py --ratio 0.0  --batch_size 256 --gamma 0.5 --beta 0.001 --learning_rate 0.01 --weight_decay 5e-4 --temp 0.07 --cosine
+python kdef_ir50_comb.py --ratio 0.0  --batch_size 256 --gamma 0.5 --beta 0.001 --learning_rate 0.01 --weight_decay 5e-4 --temp 0.07 --cosine  --dataset kdef --model IR_50 --method SupCon --special Contrast
 ```
 
 ## 利用保存的模型测试：
