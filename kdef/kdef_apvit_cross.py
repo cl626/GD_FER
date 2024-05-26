@@ -277,8 +277,8 @@ def set_loader_kdef(opt):
 
 def set_model(opt):    
     # model = IRes_50()
-    model = APViT(pret='save/SupCon/{dataset}_IR_50_standard_models/SupCon_{dataset}_IR_50_bsz_256_epoch_500_ratio_0.01_alpha_0.0_beta_0.001_gamma_0.5_lr_0.01_decay_0.0001_bsz_256_temp_0.1_trial_0_None_cosine/cl_{dataset}_last.pth'.format(dataset=opt.dataset))  # 加预训练
-    # model = APViT(pret='save/SupCon/{dataset}_IR_50_standard_models/SupCon_{dataset}_IR_50_bsz_256_epoch_500_ratio_0.0_alpha_0.0_beta_0.001_gamma_0.5_lr_0.01_decay_0.0001_bsz_256_temp_0.1_trial_0_None_cosine/cl_{dataset}_last.pth'.format(dataset=opt.dataset))  # 不加预训练
+    model = APViT(pret='save/SupCon/{dataset}_IR_50_standard_models/SupCon_{dataset}_IR_50_bsz_256_epoch_500_ratio_0.01_alpha_0.0_beta_0.001_gamma_0.5_lr_0.01_decay_0.0001_bsz_256_temp_0.1_trial_0_cosine/cl_{dataset}_last.pth'.format(dataset=opt.dataset))  # 加预训练
+    # model = APViT(pret='save/SupCon/{dataset}_IR_50_standard_models/SupCon_{dataset}_IR_50_bsz_256_epoch_500_ratio_0.0_alpha_0.0_beta_0.001_gamma_0.5_lr_0.01_decay_0.0001_bsz_256_temp_0.1_trial_0_cosine/cl_{dataset}_last.pth'.format(dataset=opt.dataset))  # 不加预训练
     # model = APViT(pret='weights/cl_kdef_last.pth')
     # model = APViT()
     
